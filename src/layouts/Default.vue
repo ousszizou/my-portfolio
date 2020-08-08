@@ -12,7 +12,7 @@
         <g-link
           data-cursor-hover
           class="nav__link menu-span uppercase text-smallest tracking-widerPlus font-bold"
-          to="/about"
+          v-scroll-to="'#about'"
           ><span data-hover="about">about</span></g-link
         >
         <g-link

@@ -1,295 +1,342 @@
 <template>
-  <kinesis-container class="relative">
-    <Layout class="text-center">
-      <Profile class="h-full w-1/6 mt-12 mx-auto" />
-      <div>
-        <h1 class="text-3xl font-bold mt-2">
-          Oussama Djaidri
-        </h1>
-        <vue-typed-js
-          :strings="['FullStack Developer', 'UI/UX Designer']"
-          :typeSpeed="80"
-          :loop="true"
-          :showCursor="true"
-          :cursorChar="'_'"
-          :backSpeed="50"
-          style="display: inline-block"
-          class="my-3"
+  <Layout class="text-center">
+    <div>
+      <kinesis-container id="home" class="relative">
+        <Profile class="h-full w-1/6 mt-8 mx-auto" />
+        <div>
+          <h1 class="text-3xl font-bold mt-2">
+            Oussama Djaidri
+          </h1>
+          <vue-typed-js
+            :strings="[
+              'FullStack Developer',
+              'Mobile Developer',
+              'Youtube Creator',
+            ]"
+            :typeSpeed="80"
+            :loop="true"
+            :showCursor="true"
+            :cursorChar="'_'"
+            :backSpeed="50"
+            style="display: inline-block"
+            class="my-3"
+          >
+            <span>I'm a <span class="typing"></span></span>
+          </vue-typed-js>
+          <div class="social-media flex w-1/2 m-auto justify-center mt-3">
+            <g-link data-cursor-hover>
+              <linkedin-icon
+                stroke-width="1.5"
+                size="20"
+                class="mx-2"
+              ></linkedin-icon>
+            </g-link>
+            <g-link data-cursor-hover>
+              <github-icon
+                stroke-width="1.5"
+                size="20"
+                class="mx-2"
+              ></github-icon>
+            </g-link>
+            <g-link data-cursor-hover>
+              <twitter-icon
+                stroke-width="1.5"
+                size="20"
+                class="mx-2"
+              ></twitter-icon>
+            </g-link>
+            <g-link data-cursor-hover>
+              <youtube-icon
+                stroke-width="1.5"
+                size="20"
+                class="mx-2"
+              ></youtube-icon>
+            </g-link>
+          </div>
+        </div>
+        <div>
+          <kinesis-element
+            class="absolute"
+            style="top: 10%; left: 10%;"
+            :strength="10"
+          >
+            <svg
+              width="60"
+              height="60"
+              viewBox="0 0 238 238"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M156 155.982H0V-0.000495155H156V155.982Z"
+                fill="#D0BB79"
+              />
+              <path
+                d="M234.005 234.1H78.0054V78.0887H234.005V234.1Z"
+                stroke="currentColor"
+                stroke-width="6.6665"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </kinesis-element>
+          <kinesis-element
+            class="absolute"
+            style="top: 100%;right: 25%;"
+            :strength="10"
+          >
+            <svg
+              width="80"
+              height="80"
+              viewBox="0 0 312 281"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M81.2803 81.0007L196.224 280.115L311.196 81.0007H81.2803Z"
+                fill="#D0BB79"
+              />
+              <path
+                d="M4 3.99853L118.944 203.113L233.915 3.99853H4Z"
+                stroke="currentColor"
+                stroke-width="6.6665"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </kinesis-element>
+          <kinesis-element
+            class="absolute"
+            style="top: 3%; right: 15%;"
+            :strength="10"
+          >
+            <svg
+              width="75"
+              height="75"
+              viewBox="0 0 201 161"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M70.6787 64.8648C70.6787 29.0425 99.6937 -0.000370204 135.516 -0.000370204C171.338 -0.000370204 200.381 29.0425 200.381 64.8648C200.381 100.687 171.338 129.702 135.516 129.702C99.6937 129.702 70.6787 100.687 70.6787 64.8648Z"
+                fill="#FF5A5A"
+              />
+              <path
+                d="M4 92.2057C4 56.3834 33.0429 27.3684 68.8372 27.3684C104.659 27.3684 133.702 56.3834 133.702 92.2057C133.702 128.028 104.659 157.043 68.8372 157.043C33.0429 157.043 4 128.028 4 92.2057Z"
+                stroke="currentColor"
+                stroke-width="6.6665"
+                stroke-miterlimit="10"
+              />
+            </svg>
+          </kinesis-element>
+          <kinesis-element
+            class="absolute"
+            style="top: 52%; left: 28%;"
+            :strength="10"
+          >
+            <svg
+              width="70"
+              height="70"
+              viewBox="0 0 515 356"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 352.084L90.1997 265.901"
+                stroke="currentColor"
+                stroke-width="6.6667"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+              />
+              <path
+                d="M4 265.869L90.1997 352.053"
+                stroke="currentColor"
+                stroke-width="6.6667"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+              />
+              <path
+                d="M299.946 109.617C299.946 51.2888 347.234 4.00033 405.562 4.00033C463.89 4.00033 511.179 51.2888 511.179 109.617C511.179 167.945 463.89 215.233 405.562 215.233C347.234 215.233 299.946 167.945 299.946 109.617Z"
+                stroke="#FF5A5A"
+                stroke-width="6.66656"
+                stroke-miterlimit="10"
+              />
+            </svg>
+          </kinesis-element>
+          <kinesis-element
+            class="absolute"
+            style="top: 100%; left: 23%;"
+            :strength="10"
+          >
+            <svg
+              width="140"
+              height="140"
+              viewBox="0 0 512 92"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="transform: rotate(45deg);"
+            >
+              <path
+                d="M507.855 87.6985L424.166 4.00024L339.981 88.1738L255.796 4.00024L171.845 87.9232L88.1558 4.22208L4 88.3984"
+                stroke="#7AB9DC"
+                stroke-width="6.66668"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </kinesis-element>
+          <kinesis-element class="absolute" style="top: 54%; right: 0%;">
+            <svg
+              width="200"
+              height="200"
+              viewBox="0 0 903 379"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M812.57 288.736L898.77 374.919"
+                stroke="currentColor"
+                stroke-width="6.6667"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+              />
+              <path
+                d="M3.99976 222.536L33.3465 251.906C52.31 270.847 83.0635 270.847 102.03 251.906L117.521 236.409C136.491 217.436 167.244 217.436 186.211 236.409L201.695 251.873C220.658 270.847 251.412 270.847 270.382 251.873L285.625 236.637C304.592 217.663 335.345 217.663 354.312 236.637L369.322 251.646C388.292 270.619 419.045 270.619 438.012 251.646L463.564 226.078"
+                stroke="#FFEE50"
+                stroke-width="6.66667"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M717.477 132.548L832.255 66.2572L717.477 -8.07734e-05V132.548Z"
+                fill="#FF5A5A"
+              />
+            </svg>
+          </kinesis-element>
+          <kinesis-element class="absolute" style="top: 40%; right: 25%;">
+            <svg
+              width="100"
+              height="100"
+              viewBox="0 0 341 332"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M337.476 106.319V327.921H115.884V106.319H337.476Z"
+                stroke="#7AB9DC"
+                stroke-width="6.66639"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M297.29 146.338V287.311H156.327V146.338H297.29Z"
+                stroke="#7AB9DC"
+                stroke-width="6.66668"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M256.896 247.213H196.58V186.906H256.896V247.213Z"
+                stroke="#7AB9DC"
+                stroke-width="6.66652"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M196.245 4.00006V196.241H4V4.00006H196.245Z"
+                stroke="currentColor"
+                stroke-width="6.66624"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </kinesis-element>
+          <kinesis-element class="absolute" style="top: 70%;" :strength="10">
+            <svg
+              width="100"
+              height="100"
+              viewBox="0 0 128 342"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="transform: rotate(45deg);"
+            >
+              <path
+                d="M4.24484 341.394C4.10256 330.708 8.11166 319.967 16.2693 311.821L41.8804 286.21C57.9223 270.168 57.9223 244.166 41.8804 228.124L16.0406 202.263C-0.00129513 186.222 -0.00129513 160.22 16.0406 144.178L42.1205 118.092C58.1596 102.05 58.1596 76.0483 42.1205 60.0064L16.0321 33.9208C7.02078 24.9095 3.07037 12.7455 4.18354 1"
+                stroke="currentColor"
+                stroke-width="6.6665"
+                stroke-miterlimit="10"
+              />
+              <path
+                d="M39.4531 341.394C39.3108 330.708 43.3199 319.967 51.4776 311.821L77.0887 286.21C93.1306 270.168 93.1306 244.166 77.0887 228.124L51.2487 202.263C35.2068 186.222 35.2068 160.22 51.2487 144.178L77.3286 118.092C93.3677 102.05 93.3677 76.0483 77.3286 60.0064L51.2404 33.9208C42.229 24.9095 38.2813 12.7455 39.3917 1"
+                stroke="currentColor"
+                stroke-width="6.6665"
+                stroke-miterlimit="10"
+              />
+              <path
+                d="M74.6894 341.394C74.5471 330.708 78.5563 319.967 86.7139 311.821L112.325 286.21C128.367 270.168 128.367 244.166 112.325 228.124L86.4852 202.263C70.4433 186.222 70.4433 160.22 86.4852 144.178L112.565 118.092C128.604 102.05 128.604 76.0483 112.565 60.0064L86.4767 33.9208C77.4654 24.9095 73.5177 12.7455 74.6281 1"
+                stroke="currentColor"
+                stroke-width="6.6665"
+                stroke-miterlimit="10"
+              />
+            </svg>
+          </kinesis-element>
+        </div>
+        <button
+          class="btn mt-8 font-bold py-2 px-8 rounded-full capitalize text-sm"
         >
-          <span>I'm a <span class="typing"></span></span>
-        </vue-typed-js>
-        <div class="social-media flex w-1/2 m-auto justify-center mt-3">
-          <g-link data-cursor-hover>
-            <linkedin-icon
-              stroke-width="1.5"
-              size="20"
-              class="mx-2"
-            ></linkedin-icon>
-          </g-link>
-          <g-link data-cursor-hover>
-            <github-icon
-              stroke-width="1.5"
-              size="20"
-              class="mx-2"
-            ></github-icon>
-          </g-link>
-          <g-link data-cursor-hover>
-            <twitter-icon
-              stroke-width="1.5"
-              size="20"
-              class="mx-2"
-            ></twitter-icon>
-          </g-link>
-          <g-link data-cursor-hover>
-            <youtube-icon
-              stroke-width="1.5"
-              size="20"
-              class="mx-2"
-            ></youtube-icon>
-          </g-link>
+          hire me
+        </button>
+        <div class="scroll-downs" v-scroll-to="'#about'">
+          <span>scroll</span>
+          <div class="mousey">
+            <div class="scroller"></div>
+          </div>
+        </div>
+      </kinesis-container>
+      <div id="about" class="about-section pt-12 my-24 flex">
+        <div class="about-section__left text-left">
+          <h2 class="uppercase font-semibold underline">
+            <span class="text-4xl font-bold mr-1 rounded-sm relative">a</span
+            >bout me
+          </h2>
+          <h3 class="mt-12">Hello 👋 Welcome to my portfolio!</h3>
+          <h4 class="text-5xl">
+            I'm
+            <span class="capitalize text-6xl font-black">oussama djaidri</span>
+          </h4>
+          <p class="mt-4 text-1xl max-w-xl">
+            Fullstack developer from <span class="relative">Algeria</span>,
+            passionate about
+            <span class="middle-span relative">javascript</span>
+            ecosystem,<br />
+            focused on creating
+            <span class="last-span relative">modern web apps</span>.
+          </p>
+          <button
+            class="btn mr-auto mt-8 font-bold py-3 px-8 rounded-full capitalize text-sm"
+          >
+            See My Works
+          </button>
+          <button
+            class="btn-secondary ml-4 mr-auto mt-8 font-bold py-3 px-8 rounded-full capitalize text-sm"
+          >
+            more about me
+          </button>
+        </div>
+        <div class="about-section__right self-center mt-12">
+          <g-image src="~/assets/images/about-me.svg"></g-image>
         </div>
       </div>
-      <div>
-        <kinesis-element
-          class="absolute"
-          style="top: 30%; left: 20%;"
-          :strength="10"
-        >
-          <svg
-            width="60"
-            height="60"
-            viewBox="0 0 238 238"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M156 155.982H0V-0.000495155H156V155.982Z" fill="#D0BB79" />
-            <path
-              d="M234.005 234.1H78.0054V78.0887H234.005V234.1Z"
-              stroke="currentColor"
-              stroke-width="6.6665"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </kinesis-element>
-        <kinesis-element
-          class="absolute"
-          style="top: 100%;right: 25%;"
-          :strength="10"
-        >
-          <svg
-            width="80"
-            height="80"
-            viewBox="0 0 312 281"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M81.2803 81.0007L196.224 280.115L311.196 81.0007H81.2803Z"
-              fill="#D0BB79"
-            />
-            <path
-              d="M4 3.99853L118.944 203.113L233.915 3.99853H4Z"
-              stroke="currentColor"
-              stroke-width="6.6665"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </kinesis-element>
-        <kinesis-element
-          class="absolute"
-          style="top: 20%; right: 20%;"
-          :strength="10"
-        >
-          <svg
-            width="75"
-            height="75"
-            viewBox="0 0 201 161"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M70.6787 64.8648C70.6787 29.0425 99.6937 -0.000370204 135.516 -0.000370204C171.338 -0.000370204 200.381 29.0425 200.381 64.8648C200.381 100.687 171.338 129.702 135.516 129.702C99.6937 129.702 70.6787 100.687 70.6787 64.8648Z"
-              fill="#FF5A5A"
-            />
-            <path
-              d="M4 92.2057C4 56.3834 33.0429 27.3684 68.8372 27.3684C104.659 27.3684 133.702 56.3834 133.702 92.2057C133.702 128.028 104.659 157.043 68.8372 157.043C33.0429 157.043 4 128.028 4 92.2057Z"
-              stroke="currentColor"
-              stroke-width="6.6665"
-              stroke-miterlimit="10"
-            />
-          </svg>
-        </kinesis-element>
-        <kinesis-element
-          class="absolute"
-          style="top: 60%; left: 30%;"
-          :strength="10"
-        >
-          <svg
-            width="70"
-            height="70"
-            viewBox="0 0 515 356"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4 352.084L90.1997 265.901"
-              stroke="currentColor"
-              stroke-width="6.6667"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-            />
-            <path
-              d="M4 265.869L90.1997 352.053"
-              stroke="currentColor"
-              stroke-width="6.6667"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-            />
-            <path
-              d="M299.946 109.617C299.946 51.2888 347.234 4.00033 405.562 4.00033C463.89 4.00033 511.179 51.2888 511.179 109.617C511.179 167.945 463.89 215.233 405.562 215.233C347.234 215.233 299.946 167.945 299.946 109.617Z"
-              stroke="#FF5A5A"
-              stroke-width="6.66656"
-              stroke-miterlimit="10"
-            />
-          </svg>
-        </kinesis-element>
-        <kinesis-element
-          class="absolute"
-          style="top: 100%; left: 23%;"
-          :strength="10"
-        >
-          <svg
-            width="140"
-            height="140"
-            viewBox="0 0 512 92"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            style="transform: rotate(45deg);"
-          >
-            <path
-              d="M507.855 87.6985L424.166 4.00024L339.981 88.1738L255.796 4.00024L171.845 87.9232L88.1558 4.22208L4 88.3984"
-              stroke="#7AB9DC"
-              stroke-width="6.66668"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </kinesis-element>
-        <kinesis-element class="absolute" style="top: 60%; right: 5%;">
-          <svg
-            width="200"
-            height="200"
-            viewBox="0 0 903 379"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M812.57 288.736L898.77 374.919"
-              stroke="currentColor"
-              stroke-width="6.6667"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-            />
-            <path
-              d="M3.99976 222.536L33.3465 251.906C52.31 270.847 83.0635 270.847 102.03 251.906L117.521 236.409C136.491 217.436 167.244 217.436 186.211 236.409L201.695 251.873C220.658 270.847 251.412 270.847 270.382 251.873L285.625 236.637C304.592 217.663 335.345 217.663 354.312 236.637L369.322 251.646C388.292 270.619 419.045 270.619 438.012 251.646L463.564 226.078"
-              stroke="#FFEE50"
-              stroke-width="6.66667"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M717.477 132.548L832.255 66.2572L717.477 -8.07734e-05V132.548Z"
-              fill="#FF5A5A"
-            />
-          </svg>
-        </kinesis-element>
-        <kinesis-element class="absolute" style="top: 50%; right: 30%;">
-          <svg
-            width="100"
-            height="100"
-            viewBox="0 0 341 332"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M337.476 106.319V327.921H115.884V106.319H337.476Z"
-              stroke="#7AB9DC"
-              stroke-width="6.66639"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M297.29 146.338V287.311H156.327V146.338H297.29Z"
-              stroke="#7AB9DC"
-              stroke-width="6.66668"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M256.896 247.213H196.58V186.906H256.896V247.213Z"
-              stroke="#7AB9DC"
-              stroke-width="6.66652"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M196.245 4.00006V196.241H4V4.00006H196.245Z"
-              stroke="currentColor"
-              stroke-width="6.66624"
-              stroke-miterlimit="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </kinesis-element>
-        <kinesis-element
-          class="absolute"
-          style="top: 75%;left: 6%;"
-          :strength="10"
-        >
-          <svg
-            width="100"
-            height="100"
-            viewBox="0 0 128 342"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            style="transform: rotate(45deg);"
-          >
-            <path
-              d="M4.24484 341.394C4.10256 330.708 8.11166 319.967 16.2693 311.821L41.8804 286.21C57.9223 270.168 57.9223 244.166 41.8804 228.124L16.0406 202.263C-0.00129513 186.222 -0.00129513 160.22 16.0406 144.178L42.1205 118.092C58.1596 102.05 58.1596 76.0483 42.1205 60.0064L16.0321 33.9208C7.02078 24.9095 3.07037 12.7455 4.18354 1"
-              stroke="currentColor"
-              stroke-width="6.6665"
-              stroke-miterlimit="10"
-            />
-            <path
-              d="M39.4531 341.394C39.3108 330.708 43.3199 319.967 51.4776 311.821L77.0887 286.21C93.1306 270.168 93.1306 244.166 77.0887 228.124L51.2487 202.263C35.2068 186.222 35.2068 160.22 51.2487 144.178L77.3286 118.092C93.3677 102.05 93.3677 76.0483 77.3286 60.0064L51.2404 33.9208C42.229 24.9095 38.2813 12.7455 39.3917 1"
-              stroke="currentColor"
-              stroke-width="6.6665"
-              stroke-miterlimit="10"
-            />
-            <path
-              d="M74.6894 341.394C74.5471 330.708 78.5563 319.967 86.7139 311.821L112.325 286.21C128.367 270.168 128.367 244.166 112.325 228.124L86.4852 202.263C70.4433 186.222 70.4433 160.22 86.4852 144.178L112.565 118.092C128.604 102.05 128.604 76.0483 112.565 60.0064L86.4767 33.9208C77.4654 24.9095 73.5177 12.7455 74.6281 1"
-              stroke="currentColor"
-              stroke-width="6.6665"
-              stroke-miterlimit="10"
-            />
-          </svg>
-        </kinesis-element>
-      </div>
-      <button class="btn-hireme mt-8 font-bold py-2 px-8 rounded-full capitalize text-sm">
-        hire me
-      </button>
-    </Layout>
-  </kinesis-container>
+    </div>
+  </Layout>
 </template>
 
 <script>
@@ -332,9 +379,117 @@ export default {
   color: var(--special-color);
 }
 
-.btn-hireme {
+.btn {
+  background: var(--special-color);
+  color: #fff;
+  border: 2px solid var(--special-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--bg-color);
+  color: var(--special-color);
+}
+
+.btn-secondary {
+  background: var(--bg-color);
+  color: var(--special-color);
+  border: 2px solid var(--special-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
   background: var(--special-color);
   color: #fff;
 }
 
+/* scroller */
+.scroll-downs {
+  position: absolute;
+  top: 125%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width :60px;
+  height: 60px;
+}
+
+.scroll-downs span {
+  font-size: 11px;
+  text-transform: capitalize;
+  color: var(--title-color);
+}
+
+.mousey {
+  width: 3px;
+  padding: 3px 6px;
+  height: 20px;
+  border: 2px solid var(--title-color);
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+  margin: 2px auto;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: var(--title-color);
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
+/* about section */
+.about-section .about-section__left h2 {
+  color: var(--title-color);
+}
+
+.about-section .about-section__left h2 span {
+  background: var(--special-color);
+  padding: 5px 10px;
+  color: var(--bg-color);
+}
+
+.about-section .about-section__left h2 span::before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background: var(--title-color);
+  position: absolute;
+  top: 5px;
+  opacity: 0.9;
+  left: -5px;
+  z-index: -1;
+  border-radius: 3px;
+}
+
+.about-section .about-section__left p span::after {
+  content: " ";
+  width: 84px;
+  height: 10px;
+  position: absolute;
+  bottom: 0px;
+  background: var(--special-color);
+  right: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.about-section .about-section__left p .middle-span::after {
+  width: 110px;
+}
+
+.about-section .about-section__left p .last-span::after {
+  width: 210px;
+}
 </style>

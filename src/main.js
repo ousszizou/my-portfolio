@@ -13,10 +13,14 @@ import "@luxdamore/vue-cursor-fx/dist/CursorFx.css";
 
 import VueTypedJs from "vue-typed-js";
 
+import VueScrollTo from "vue-scrollto";
+
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
+  
   Vue.use(VueTypedJs);
+  Vue.use(VueScrollTo);
 
   if (isClient) {
     Vue.component("cursor-fx", () =>
