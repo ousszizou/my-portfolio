@@ -1,6 +1,7 @@
 // Default variables
 html {
-	--base-font-size: 20px;
+  --base-font-size: 20px;
+  --second-font-size: 18px;
 }
 
 // Light default theme
@@ -13,6 +14,9 @@ body {
   --space: 3.5rem; // margin, padding, ...
   --radius: 5px; // border-radius
   --special-color: #D0BB79;
+  --card-color: #f9f9f9;
+  --tags-bg-color: #fff;
+  --box-shadow: #bdbdbd;
 }
 
 // Make  things smaller for mobile
@@ -31,5 +35,8 @@ body[lights-out] {
  	--body-color: #ced8de;
  	--border-color:  rgba(255,255,255,.1);
  	--title-color: #fff;
-   --link-color: #af9cef;
+  --link-color: #af9cef;
+  --card-color: #222831;
+  --tags-bg-color: #1a202c;
+  --box-shadow: #0000001a;
 }

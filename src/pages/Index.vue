@@ -1,12 +1,11 @@
 <template>
   <Layout class="text-center">
     <div>
+      <!-- header section -->
       <kinesis-container id="home" class="relative">
         <Profile class="h-full w-1/6 mt-8 mx-auto" />
         <div>
-          <h1 class="text-3xl font-bold mt-2">
-            Oussama Djaidri
-          </h1>
+          <h1 class="text-3xl font-bold mt-2">Oussama Djaidri</h1>
           <vue-typed-js
             :strings="[
               'FullStack Developer',
@@ -21,45 +20,28 @@
             style="display: inline-block"
             class="my-3"
           >
-            <span>I'm a <span class="typing"></span></span>
+            <span>
+              I'm a
+              <span class="typing"></span>
+            </span>
           </vue-typed-js>
           <div class="social-media flex w-1/2 m-auto justify-center mt-3">
             <g-link data-cursor-hover>
-              <linkedin-icon
-                stroke-width="1.5"
-                size="20"
-                class="mx-2"
-              ></linkedin-icon>
+              <linkedin-icon stroke-width="1.5" size="20" class="mx-2"></linkedin-icon>
             </g-link>
             <g-link data-cursor-hover>
-              <github-icon
-                stroke-width="1.5"
-                size="20"
-                class="mx-2"
-              ></github-icon>
+              <github-icon stroke-width="1.5" size="20" class="mx-2"></github-icon>
             </g-link>
             <g-link data-cursor-hover>
-              <twitter-icon
-                stroke-width="1.5"
-                size="20"
-                class="mx-2"
-              ></twitter-icon>
+              <twitter-icon stroke-width="1.5" size="20" class="mx-2"></twitter-icon>
             </g-link>
             <g-link data-cursor-hover>
-              <youtube-icon
-                stroke-width="1.5"
-                size="20"
-                class="mx-2"
-              ></youtube-icon>
+              <youtube-icon stroke-width="1.5" size="20" class="mx-2"></youtube-icon>
             </g-link>
           </div>
         </div>
         <div>
-          <kinesis-element
-            class="absolute"
-            style="top: 10%; left: 10%;"
-            :strength="10"
-          >
+          <kinesis-element class="absolute" style="top: 10%; left: 10%;" :strength="10">
             <svg
               width="60"
               height="60"
@@ -67,10 +49,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path
-                d="M156 155.982H0V-0.000495155H156V155.982Z"
-                fill="#D0BB79"
-              />
+              <path d="M156 155.982H0V-0.000495155H156V155.982Z" fill="#D0BB79" />
               <path
                 d="M234.005 234.1H78.0054V78.0887H234.005V234.1Z"
                 stroke="currentColor"
@@ -81,11 +60,7 @@
               />
             </svg>
           </kinesis-element>
-          <kinesis-element
-            class="absolute"
-            style="top: 100%;right: 25%;"
-            :strength="10"
-          >
+          <kinesis-element class="absolute" style="top: 100%;right: 25%;" :strength="10">
             <svg
               width="80"
               height="80"
@@ -93,10 +68,7 @@
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path
-                d="M81.2803 81.0007L196.224 280.115L311.196 81.0007H81.2803Z"
-                fill="#D0BB79"
-              />
+              <path d="M81.2803 81.0007L196.224 280.115L311.196 81.0007H81.2803Z" fill="#D0BB79" />
               <path
                 d="M4 3.99853L118.944 203.113L233.915 3.99853H4Z"
                 stroke="currentColor"
@@ -107,11 +79,7 @@
               />
             </svg>
           </kinesis-element>
-          <kinesis-element
-            class="absolute"
-            style="top: 3%; right: 15%;"
-            :strength="10"
-          >
+          <kinesis-element class="absolute" style="top: 3%; right: 15%;" :strength="10">
             <svg
               width="75"
               height="75"
@@ -131,11 +99,7 @@
               />
             </svg>
           </kinesis-element>
-          <kinesis-element
-            class="absolute"
-            style="top: 52%; left: 28%;"
-            :strength="10"
-          >
+          <kinesis-element class="absolute" style="top: 52%; left: 28%;" :strength="10">
             <svg
               width="70"
               height="70"
@@ -165,11 +129,7 @@
               />
             </svg>
           </kinesis-element>
-          <kinesis-element
-            class="absolute"
-            style="top: 100%; left: 23%;"
-            :strength="10"
-          >
+          <kinesis-element class="absolute" style="top: 100%; left: 23%;" :strength="10">
             <svg
               width="140"
               height="140"
@@ -289,23 +249,22 @@
             </svg>
           </kinesis-element>
         </div>
-        <button
-          class="btn mt-8 font-bold py-2 px-8 rounded-full capitalize text-sm"
-        >
-          hire me
-        </button>
+        <g-link
+          to="/contact"
+          class="btn mt-8 font-bold py-2 px-8 rounded-full capitalize text-sm inline-block"
+        >hire me</g-link>
         <div class="scroll-downs" v-scroll-to="'#about'">
-          <span>scroll</span>
+          <span>scroll down</span>
           <div class="mousey">
             <div class="scroller"></div>
           </div>
         </div>
       </kinesis-container>
+      <!-- about section -->
       <div id="about" class="about-section pt-12 my-24 flex">
         <div class="about-section__left text-left">
-          <h2 class="uppercase font-semibold underline">
-            <span class="text-4xl font-bold mr-1 rounded-sm relative">a</span
-            >bout me
+          <h2 class="section-heading uppercase font-semibold underline">
+            <span class="text-4xl font-bold mr-1 rounded-sm relative">a</span>bout me
           </h2>
           <h3 class="mt-12">Hello 👋 Welcome to my portfolio!</h3>
           <h4 class="text-5xl">
@@ -313,26 +272,99 @@
             <span class="capitalize text-6xl font-black">oussama djaidri</span>
           </h4>
           <p class="mt-4 text-1xl max-w-xl">
-            Fullstack developer from <span class="relative">Algeria</span>,
+            Fullstack developer from
+            <span class="relative">Algeria</span>,
             passionate about
             <span class="middle-span relative">javascript</span>
-            ecosystem,<br />
-            focused on creating
+            ecosystem,
+            <br />focused on creating
             <span class="last-span relative">modern web apps</span>.
           </p>
-          <button
-            class="btn mr-auto mt-8 font-bold py-3 px-8 rounded-full capitalize text-sm"
-          >
-            See My Works
-          </button>
-          <button
-            class="btn-secondary ml-4 mr-auto mt-8 font-bold py-3 px-8 rounded-full capitalize text-sm"
-          >
-            more about me
-          </button>
+          <g-link
+            class="btn mr-auto mt-8 font-bold py-3 px-8 rounded-full capitalize text-sm inline-block"
+            to="/works"
+          >See My Works</g-link>
+          <g-link
+            class="btn-secondary ml-4 mr-auto mt-8 font-bold py-3 px-8 rounded-full capitalize text-sm inline-block"
+            to="/about"
+          >more about me</g-link>
         </div>
         <div class="about-section__right self-center mt-12">
           <g-image src="~/assets/images/about-me.svg"></g-image>
+        </div>
+      </div>
+      <!-- works section -->
+      <div id="works" class="works-section my-24 text-left">
+        <h2 class="section-heading uppercase font-semibold underline">
+          <span class="text-4xl font-bold mr-1 rounded-sm relative">m</span>y works
+        </h2>
+        <!-- work-1 -->
+        <div class="mt-20 card w-4/5 rounded-md mx-auto overflow-hidden">
+          <div class="card-header work-1 h-64 overflow-hidden">
+            <g-link>
+              <g-image src="~/assets/images/work1.png"></g-image>
+            </g-link>
+          </div>
+          <div class="card-content mx-12 my-6">
+            <div class="mb-10">
+              <h3 class="text-2xl font-bold inline-block">Marvel - Portfolio Theme</h3>
+              <span class="underline font-bold uppercase text-smallest ml-3">
+                see demo
+                <external-link-icon class="inline-block"></external-link-icon>
+              </span>
+            </div>
+            <div class="tags uppercase text-xs font-semibold mb-6">
+              <span class="mr-2 p-2">#html5</span>
+              <span class="mx-2 p-2">#css3</span>
+              <span class="mx-2 p-2">#javascript</span>
+              <span class="mx-2 p-2">#tailwindcss</span>
+            </div>
+            <p>
+              It’s time to create and inspire with
+              <span>Marvel</span>, a stunning modern portfolio theme I created so you can showcase your work the way it truly deserves.
+            </p>
+          </div>
+        </div>
+        <!-- work-2 -->
+        <div class="mt-12 card w-4/5 rounded-md mx-auto overflow-hidden">
+          <div class="card-header work-2 h-64 overflow-hidden">
+            <g-link>
+              <g-image src="~/assets/images/work-2.png"></g-image>
+            </g-link>
+          </div>
+          <div class="card-content mx-12 my-6">
+            <div class="mb-10">
+              <h3 class="text-2xl font-bold inline-block">Magazee - Website Template</h3>
+              <span class="underline font-bold uppercase text-smallest ml-3">
+                see demo
+                <external-link-icon class="inline-block"></external-link-icon>
+              </span>
+            </div>
+            <div class="tags uppercase text-xs font-semibold mb-6">
+              <span class="mr-2 p-2">#html5</span>
+              <span class="mx-2 p-2">#css3</span>
+            </div>
+            <p>Responsive, progressive web app for magazine websites.</p>
+          </div>
+        </div>
+        <!-- more works -->
+        <div class="text-center mt-16 more-works inline-block w-48 relative">
+          <div class="circle"></div>
+          <g-link to="/works" class="uppercase text-md font-light relative">
+            see more
+            <span class="text-lg">&#8594;</span>
+          </g-link>
+        </div>
+        <!-- let's work together -->
+        <div class="mt-16 text-center">
+          <h3 class="text-5xl font-bold">
+            Like my works? Let's work together,
+            <br />You can contact me now!
+          </h3>
+          <g-link
+            class="btn mr-auto mt-8 font-bold py-3 px-8 rounded-sm text-sm inline-block uppercase"
+            v-scroll-to="'#contact'"
+          >contact</g-link>
         </div>
       </div>
     </div>
@@ -346,6 +378,7 @@ import {
   GithubIcon,
   TwitterIcon,
   YoutubeIcon,
+  ExternalLinkIcon,
 } from "vue-feather-icons";
 
 export default {
@@ -358,6 +391,7 @@ export default {
     GithubIcon,
     TwitterIcon,
     YoutubeIcon,
+    ExternalLinkIcon,
   },
 };
 </script>
@@ -413,7 +447,7 @@ export default {
   bottom: 0;
   left: 0;
   margin: auto;
-  width :60px;
+  width: 60px;
   height: 60px;
 }
 
@@ -440,27 +474,35 @@ export default {
   background-color: var(--title-color);
   animation-name: scroll;
   animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
   animation-iteration-count: infinite;
 }
 @keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(15px); opacity: 0;}
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
 }
 
 /* about section */
-.about-section .about-section__left h2 {
+.section-heading {
   color: var(--title-color);
 }
 
-.about-section .about-section__left h2 span {
+.section-heading span {
   background: var(--special-color);
   padding: 5px 10px;
   color: var(--bg-color);
 }
 
-.about-section .about-section__left h2 span::before {
+.section-heading span::before {
   content: " ";
   width: 100%;
   height: 100%;
@@ -491,5 +533,79 @@ export default {
 
 .about-section .about-section__left p .last-span::after {
   width: 210px;
+}
+
+/* my works section */
+
+.works-section .card {
+  box-shadow: 1px 1px 18px var(--box-shadow);
+  background: var(--card-color);
+}
+
+.works-section .card .card-header img {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.works-section .card .work-1:hover img {
+  animation: moveSlideshow1 3s ease-in-out forwards;
+}
+
+.works-section .card .work-2:hover img {
+  animation: moveSlideshow2 3s ease-in-out forwards;
+}
+
+@keyframes moveSlideshow1 {
+  100% {
+    transform: translateY(-84.5%);
+  }
+}
+
+@keyframes moveSlideshow2 {
+  100% {
+    transform: translateY(-87%);
+  }
+}
+
+.works-section .card .card-content div span {
+  cursor: pointer;
+}
+
+.works-section .card .card-content div span svg {
+  vertical-align: sub;
+  width: 18px;
+  color: var(--body-color);
+  position: relative;
+  top: 3px;
+}
+
+.works-section .card .card-content .tags span {
+  background: var(--tags-bg-color);
+  color: var(--special-color);
+}
+
+.works-section .circle {
+  width: 45px;
+  height: 45px;
+  background: var(--special-color);
+  display: inline-block;
+  border-radius: 50px;
+  left: 4%;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  top: -12%;
+}
+
+.more-works:hover .circle {
+  width: 210px;
+}
+
+.more-works:hover a {
+  color: var(--bg-color);
+}
+
+.more-works {
+  left: 50%;
+  transform: translateX(-50%);
 }
 </style>

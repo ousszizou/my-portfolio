@@ -18,25 +18,25 @@
         <g-link
           data-cursor-hover
           class="nav__link menu-span uppercase text-smallest tracking-widerPlus font-bold"
-          to="/about"
+          v-scroll-to="'#works'"
           ><span data-hover="works">works</span></g-link
         >
         <g-link
           data-cursor-hover
           class="nav__link menu-span uppercase text-smallest tracking-widerPlus font-bold"
-          to="/about"
+          v-scroll-to="'#services'"
           ><span data-hover="services">services</span></g-link
         >
         <g-link
           data-cursor-hover
           class="nav__link menu-span uppercase text-smallest tracking-widerPlus font-bold"
-          to="/about"
+          v-scroll-to="'#courses'"
           ><span data-hover="courses">courses</span></g-link
         >
         <g-link
           data-cursor-hover
           class="nav__link menu-span uppercase text-smallest tracking-widerPlus font-bold"
-          to="/about"
+          v-scroll-to="'#contact'"
           ><span data-hover="contact">contact</span></g-link
         >
         <ToggleDarkMode class="align-middle ml-6" data-cursor-hover>
