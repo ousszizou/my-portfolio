@@ -48,7 +48,7 @@
       </nav>
     </header>
     <slot />
-    <cursor-fx color-hover="#D0BB79" />
+    <cursor-fx />
     <footer class="mb-5">
       <p class="mb-1">&copy; 2020 Oussama Djaidri. All rights reserved.</p>
       <p class="text-sm">

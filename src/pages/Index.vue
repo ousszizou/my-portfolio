@@ -250,10 +250,11 @@
           </kinesis-element>
         </div>
         <g-link
+          data-cursor-hover 
           to="/contact"
           class="btn mt-8 font-bold py-2 px-8 rounded-full capitalize text-sm inline-block"
         >hire me</g-link>
-        <div class="scroll-downs" v-scroll-to="'#about'">
+        <div class="scroll-downs" v-scroll-to="'#about'" data-cursor-hover>
           <span>scroll down</span>
           <div class="mousey">
             <div class="scroller"></div>
@@ -283,10 +284,12 @@
           <g-link
             class="btn mr-auto mt-8 font-bold py-3 px-8 rounded-full capitalize text-sm inline-block"
             to="/works"
+            data-cursor-hover
           >See My Works</g-link>
           <g-link
             class="btn-secondary ml-4 mr-auto mt-8 font-bold py-3 px-8 rounded-full capitalize text-sm inline-block"
             to="/about"
+            data-cursor-hover
           >more about me</g-link>
         </div>
         <div class="about-section__right self-center mt-12">
@@ -301,14 +304,14 @@
         <!-- work-1 -->
         <div class="mt-20 card w-4/5 rounded-md mx-auto overflow-hidden">
           <div class="card-header work-1 h-64 overflow-hidden">
-            <g-link>
+            <g-link data-cursor-hover>
               <g-image src="~/assets/images/work1.png"></g-image>
             </g-link>
           </div>
           <div class="card-content mx-12 my-6">
             <div class="mb-10">
               <h3 class="text-2xl font-bold inline-block">Marvel - Portfolio Theme</h3>
-              <span class="underline font-bold uppercase text-smallest ml-3">
+              <span class="underline font-bold uppercase text-smallest ml-3" data-cursor-hover>
                 see demo
                 <external-link-icon class="inline-block"></external-link-icon>
               </span>
@@ -328,14 +331,14 @@
         <!-- work-2 -->
         <div class="mt-12 card w-4/5 rounded-md mx-auto overflow-hidden">
           <div class="card-header work-2 h-64 overflow-hidden">
-            <g-link>
+            <g-link data-cursor-hover>
               <g-image src="~/assets/images/work-2.png"></g-image>
             </g-link>
           </div>
           <div class="card-content mx-12 my-6">
             <div class="mb-10">
               <h3 class="text-2xl font-bold inline-block">Magazee - Website Template</h3>
-              <span class="underline font-bold uppercase text-smallest ml-3">
+              <span class="underline font-bold uppercase text-smallest ml-3" data-cursor-hover>
                 see demo
                 <external-link-icon class="inline-block"></external-link-icon>
               </span>
@@ -350,7 +353,7 @@
         <!-- more works -->
         <div class="text-center mt-16 more-works inline-block w-48 relative">
           <div class="circle"></div>
-          <g-link to="/works" class="uppercase text-md font-light relative">
+          <g-link data-cursor-hover to="/works" class="uppercase text-md font-light relative">
             see more
             <span class="text-lg">&#8594;</span>
           </g-link>
@@ -364,6 +367,7 @@
           <g-link
             class="btn mr-auto mt-8 font-bold py-3 px-8 rounded-sm text-sm inline-block uppercase"
             v-scroll-to="'#contact'"
+            data-cursor-hover
           >contact</g-link>
         </div>
       </div>
@@ -405,7 +409,7 @@
       <div id="courses" class="courses-section my-24 text-center">
         <h3 class="mb-6 text-3xl font-bold">
           I create videos on
-          <g-link to="/">YouTube</g-link>
+          <g-link to="https://www.youtube.com/c/algorithmCoding" data-cursor-hover>YouTube</g-link>
         </h3>
         <p
           class="max-w-xl mx-auto"
@@ -416,6 +420,7 @@
           <g-link
             class="btn mr-auto mt-8 font-bold py-3 px-8 rounded-sm text-sm inline-block uppercase"
             v-scroll-to="'#contact'"
+            data-cursor-hover
           >contact</g-link>
         </div>
       </div>
@@ -663,10 +668,6 @@ export default {
   100% {
     transform: translateY(-87%);
   }
-}
-
-.works-section .card .card-content div span {
-  cursor: pointer;
 }
 
 .works-section .card .card-content div span svg {
