@@ -87,7 +87,9 @@ export default {
     };
   },
   mounted() {
-    this.loading = false;
+    setTimeout(() => {
+      this.loading = false;
+    }, 2000);
   },
 };
 </script>
