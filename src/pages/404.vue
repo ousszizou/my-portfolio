@@ -13,6 +13,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  metaInfo: {
+    title: '404',
+  }
+}
+</script>
+
 <style scoped>
 .not-found {
   background: #fff;
