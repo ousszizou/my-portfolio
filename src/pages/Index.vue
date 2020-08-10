@@ -251,7 +251,7 @@
         </div>
         <g-link
           data-cursor-hover 
-          to="/contact"
+          v-scroll-to="'#contact'"
           class="btn mt-8 font-bold py-2 px-8 rounded-full capitalize text-sm inline-block"
         >hire me</g-link>
         <div class="scroll-downs" v-scroll-to="'#about'" data-cursor-hover>
