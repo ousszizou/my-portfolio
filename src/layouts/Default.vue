@@ -1,60 +1,69 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <Logo data-cursor-hover />
-      <nav class="nav">
-        <g-link
-          data-cursor-hover
-          class="nav__link menu-span uppercase text-smallest tracking-widerPlus font-bold"
-          to="/"
-          ><span data-hover="home">home</span></g-link
-        >
-        <g-link
-          data-cursor-hover
-          class="nav__link menu-span uppercase text-smallest tracking-widerPlus font-bold"
-          v-scroll-to="'#about'"
-          ><span data-hover="about">about</span></g-link
-        >
-        <g-link
-          data-cursor-hover
-          class="nav__link menu-span uppercase text-smallest tracking-widerPlus font-bold"
-          v-scroll-to="'#works'"
-          ><span data-hover="works">works</span></g-link
-        >
-        <g-link
-          data-cursor-hover
-          class="nav__link menu-span uppercase text-smallest tracking-widerPlus font-bold"
-          v-scroll-to="'#services'"
-          ><span data-hover="services">services</span></g-link
-        >
-        <g-link
-          data-cursor-hover
-          class="nav__link menu-span uppercase text-smallest tracking-widerPlus font-bold"
-          v-scroll-to="'#courses'"
-          ><span data-hover="courses">courses</span></g-link
-        >
-        <g-link
-          data-cursor-hover
-          class="nav__link menu-span uppercase text-smallest tracking-widerPlus font-bold"
-          v-scroll-to="'#contact'"
-          ><span data-hover="contact">contact</span></g-link
-        >
-        <ToggleDarkMode class="align-middle ml-6" data-cursor-hover>
-          <template slot="default" slot-scope="{ dark }">
-            <MoonIcon v-if="dark" />
-            <SunIcon v-else />
-          </template>
-        </ToggleDarkMode>
-      </nav>
-    </header>
-    <slot />
-    <cursor-fx />
-    <footer class="mb-5">
-      <p class="mb-1">&copy; 2020 Oussama Djaidri. All rights reserved.</p>
-      <p class="text-sm">
-        Built with <span>Gridsome</span> & <span>Tailwindcss</span>.
-      </p>
-    </footer>
+  <div>
+    <div v-if="loading">
+      <breeding-rhombus-spinner
+        :animation-duration="2000"
+        :size="100"
+        color="#D0BB79"
+      />
+    </div>
+    <div class="layout" v-else>
+      <header class="header">
+        <Logo data-cursor-hover />
+        <nav class="nav">
+          <g-link
+            data-cursor-hover
+            class="nav__link menu-span uppercase text-smallest tracking-widerPlus font-bold"
+            to="/"
+            ><span data-hover="home">home</span></g-link
+          >
+          <g-link
+            data-cursor-hover
+            class="nav__link menu-span uppercase text-smallest tracking-widerPlus font-bold"
+            v-scroll-to="'#about'"
+            ><span data-hover="about">about</span></g-link
+          >
+          <g-link
+            data-cursor-hover
+            class="nav__link menu-span uppercase text-smallest tracking-widerPlus font-bold"
+            v-scroll-to="'#works'"
+            ><span data-hover="works">works</span></g-link
+          >
+          <g-link
+            data-cursor-hover
+            class="nav__link menu-span uppercase text-smallest tracking-widerPlus font-bold"
+            v-scroll-to="'#services'"
+            ><span data-hover="services">services</span></g-link
+          >
+          <g-link
+            data-cursor-hover
+            class="nav__link menu-span uppercase text-smallest tracking-widerPlus font-bold"
+            v-scroll-to="'#courses'"
+            ><span data-hover="courses">courses</span></g-link
+          >
+          <g-link
+            data-cursor-hover
+            class="nav__link menu-span uppercase text-smallest tracking-widerPlus font-bold"
+            v-scroll-to="'#contact'"
+            ><span data-hover="contact">contact</span></g-link
+          >
+          <ToggleDarkMode class="align-middle ml-6" data-cursor-hover>
+            <template slot="default" slot-scope="{ dark }">
+              <MoonIcon v-if="dark" />
+              <SunIcon v-else />
+            </template>
+          </ToggleDarkMode>
+        </nav>
+      </header>
+      <slot />
+      <cursor-fx />
+      <footer class="mb-5">
+        <p class="mb-1">&copy; 2020 Oussama Djaidri. All rights reserved.</p>
+        <p class="text-sm">
+          Built with <span>Gridsome</span> & <span>Tailwindcss</span>.
+        </p>
+      </footer>
+    </div>
   </div>
 </template>
 
@@ -62,6 +71,7 @@
 import Logo from "~/components/Logo.vue";
 import ToggleDarkMode from "~/components/ToggleDarkMode";
 import { SunIcon, MoonIcon } from "vue-feather-icons";
+import { BreedingRhombusSpinner } from "epic-spinners";
 
 export default {
   components: {
@@ -69,29 +79,46 @@ export default {
     ToggleDarkMode,
     SunIcon,
     MoonIcon,
+    BreedingRhombusSpinner,
+  },
+  data() {
+    return {
+      loading: true,
+    };
+  },
+  mounted() {
+    this.loading = false;
   },
 };
 </script>
 
 <style>
 
+.breeding-rhombus-spinner {
+  position: absolute !important;
+  top: 50%;
+  z-index: 9999;
+  left: 50%;
+  transform: translate(-50%,-50%) !important;
+}
+
 /* customize scrollbar */
 ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+  width: 10px;
+  height: 10px;
 }
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px var(--bg-color); 
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
+  -webkit-box-shadow: inset 0 0 6px var(--bg-color);
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
 }
 ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    background: var(--special-color);
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background: var(--special-color);
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-    background: var(--title-color); 
+  background: var(--title-color);
 }
 
 body {
