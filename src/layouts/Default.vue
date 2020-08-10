@@ -88,8 +88,7 @@ export default {
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 50px;
     border-radius: 50px;
-    background: var(--special-color); 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background: var(--special-color);
 }
 ::-webkit-scrollbar-thumb:window-inactive {
     background: var(--title-color); 
