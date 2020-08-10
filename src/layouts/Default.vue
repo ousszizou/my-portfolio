@@ -49,6 +49,10 @@
     </header>
     <slot />
     <cursor-fx color-hover="#D0BB79" />
+    <footer class="mb-5">
+      <p class="mb-1">&copy; 2020 Oussama Djaidri. All rights reserved.</p>
+      <p class="text-sm">Built with <span>Gridsome</span> & <span>Tailwindcss</span>.</p>
+    </footer>
   </div>
 </template>
 
@@ -142,5 +146,10 @@ button:focus {
 
 #cursor-fx {
   color: var(--title-color) !important;
+}
+
+footer p span {
+  color: var(--special-color);
+  font-weight: bold;
 }
 </style>
