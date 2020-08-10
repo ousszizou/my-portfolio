@@ -51,7 +51,9 @@
     <cursor-fx color-hover="#D0BB79" />
     <footer class="mb-5">
       <p class="mb-1">&copy; 2020 Oussama Djaidri. All rights reserved.</p>
-      <p class="text-sm">Built with <span>Gridsome</span> & <span>Tailwindcss</span>.</p>
+      <p class="text-sm">
+        Built with <span>Gridsome</span> & <span>Tailwindcss</span>.
+      </p>
     </footer>
   </div>
 </template>
@@ -72,12 +74,34 @@ export default {
 </script>
 
 <style>
+
+/* customize scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px var(--bg-color); 
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    background: var(--special-color); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: var(--title-color); 
+}
+
 body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .layout {
@@ -109,7 +133,7 @@ body {
 
 .nav__link span {
   display: inline-block;
-  position:relative;
+  position: relative;
   transition: transform 500ms;
   -webkit-transition: -webkit-transform 500ms;
   -moz-transition: transform 500ms;
@@ -118,10 +142,10 @@ body {
   content: attr(data-hover);
   position: absolute;
   top: -30px;
-  left:0;
-  transform: translate3d(0,0,0);
-	-moz-transform: translate3d(0,0,0);
-  -webkit-transform: translate3d(0,0,0);
+  left: 0;
+  transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
   color: var(--special-color);
 }
 
