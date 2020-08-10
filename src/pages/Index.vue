@@ -378,21 +378,21 @@
             <div class="all-services">
               <div class="ml-4">
                 <h4 class="underline font-bold">Web Development</h4>
-                <p class="mt-3 text-sm">
-                  I know how to create your website to run across devices using the latest technologies available.
-                </p>
+                <p
+                  class="mt-3 text-sm"
+                >I know how to create your website to run across devices using the latest technologies available.</p>
               </div>
               <div class="ml-8 mt-4">
                 <h4 class="underline font-bold">Mobile Development</h4>
                 <p class="mt-3 text-sm">
-                  I love to build mobile apps runs on both android & iOS using latest technologies such as <span>flutter</span> & <span>react native</span>.
+                  I love to build mobile apps runs on both android & iOS using latest technologies such as
+                  <span>flutter</span> &
+                  <span>react native</span>.
                 </p>
               </div>
               <div class="ml-12 mt-4">
                 <h4 class="underline font-bold">Other Services</h4>
-                <p class="mt-3 text-sm">
-                  Fix bugs - App improvements - Help/Consultation
-                </p>
+                <p class="mt-3 text-sm">Fix bugs - App improvements - Help/Consultation</p>
               </div>
             </div>
           </div>
@@ -403,23 +403,60 @@
       </div>
       <!-- courses section -->
       <div id="courses" class="courses-section my-24 text-center">
-        <h3 class="mb-6 text-3xl font-bold">I create videos on <g-link to="/">YouTube</g-link></h3>
-        <p class="max-w-xl mx-auto">
-          Over the last year, I've created courses on VS Code, Web Development, Pytohn, Node.js, and more. I love being able to put the things I've learned into a package for others to learn from.
-        </p>
+        <h3 class="mb-6 text-3xl font-bold">
+          I create videos on
+          <g-link to="/">YouTube</g-link>
+        </h3>
+        <p
+          class="max-w-xl mx-auto"
+        >Over the last year, I've created courses on VS Code, Web Development, Pytohn, Node.js, and more. I love being able to put the things I've learned into a package for others to learn from.</p>
         <div class="mt-6 max-w-xl mx-auto">
-          <h3 class="text-2xl mb-6 font-bold">
-            Looking for Custom Content?
-          </h3>
-          <p>
-            I often get requests to create custom content like individual courses, one-off videos, articles, etc. If you're interested in something,contact me and include all of the necessary details.
-          </p>
+          <h3 class="text-2xl mb-6 font-bold">Looking for Custom Content?</h3>
+          <p>I often get requests to create custom content like individual courses, one-off videos, articles, etc. If you're interested in something,contact me and include all of the necessary details.</p>
           <g-link
             class="btn mr-auto mt-8 font-bold py-3 px-8 rounded-sm text-sm inline-block uppercase"
             v-scroll-to="'#contact'"
           >contact</g-link>
         </div>
       </div>
+      <!-- contact section -->
+      <dir id="contact" class="contact-section p-0">
+        <div class="contact-header mb-8">
+          <span class="uppercase font-bold text-xs">get in touch</span>
+          <h3 class="font-bold text-6xl uppercase">contact</h3>
+        </div>
+        <div class="contact-content flex flex-wrap">
+          <div class="contact-info w-full flex justify-around">
+            <span class="text-sm">
+              <mail-icon class="inline"></mail-icon>
+              odjaidri@gmail.com
+            </span>
+            <span class="text-sm">
+              <phone-icon class="inline"></phone-icon>
+              +213 666-35-83-89
+            </span>
+            <span class="text-sm">
+              <map-pin-icon class="inline"></map-pin-icon>
+              address: Sétif, Algeria
+            </span>
+            <span class="text-sm">
+              <smile-icon class="inline"></smile-icon>
+              freelancer : <span class="freelancer font-bold">available</span>
+            </span>
+          </div>
+          <div class="contact-form mt-1 w-full flex p-4">
+            <form class="w-1/2 p-6">
+              <input class="w-full border mb-4 p-4 rounded" type="text" name="name" placeholder="Your Name" autocomplete="off">
+              <input class="w-full border mb-4 p-4 rounded" type="email" name="email" placeholder="Your Email" autocomplete="off">
+              <input class="w-full border mb-4 p-4 rounded" type="text" name="subject" placeholder="Subject" autocomplete="off">
+              <textarea class="w-full border rounded p-4" name="details" cols="24" rows="5" placeholder="Additional Details"></textarea>
+            </form>
+            <div class="w-1/2 p-4">
+              <g-image src="~/assets/images/contactme.svg"></g-image>
+            </div>
+          </div>
+        </div>
+      </dir>
     </div>
   </Layout>
 </template>
@@ -431,6 +468,10 @@ import {
   GithubIcon,
   TwitterIcon,
   YoutubeIcon,
+  MailIcon,
+  PhoneIcon,
+  MapPinIcon,
+  SmileIcon,
   ExternalLinkIcon,
 } from "vue-feather-icons";
 
@@ -444,6 +485,10 @@ export default {
     GithubIcon,
     TwitterIcon,
     YoutubeIcon,
+    MailIcon,
+    PhoneIcon,
+    MapPinIcon,
+    SmileIcon,
     ExternalLinkIcon,
   },
 };
@@ -663,8 +708,7 @@ export default {
 }
 
 /* services section */
-.services-section .content-section .left-section
-.all-services p span {
+.services-section .content-section .left-section .all-services p span {
   color: var(--special-color);
   font-weight: bold;
 }
@@ -676,5 +720,37 @@ export default {
   text-decoration: underline;
   cursor: pointer;
 }
+
+/* contact section */
+
+.contact-section .contact-header span::after {
+  content: " ";
+  width: 20px;
+  height: 2px;
+  background: var(--body-color);
+  display: inline-block;
+  position: relative;
+  top: -4px;
+  left: 5px;
+}
+
+.contact-info span .freelancer {
+  color: var(--special-color);
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  background: var(--bg-color);
+  border: 2px solid var(--title-color);
+  transition: all .2s ease-in-out;
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+  box-shadow: none;
+  outline: none;
+  border: 2px solid var(--special-color);
+}
+
 
 </style>
