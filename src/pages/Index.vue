@@ -3,7 +3,7 @@
     <div>
       <!-- header section -->
       <kinesis-container id="home" class="relative">
-        <Profile class="h-full w-1/6 mt-8 mx-auto" />
+        <Profile class="h-full w-1/3 md:w-1/6 mt-8 mx-auto" />
         <div>
           <h1 class="text-3xl font-bold mt-2">Oussama Djaidri</h1>
           <vue-typed-js
@@ -40,7 +40,7 @@
             </g-link>
           </div>
         </div>
-        <div>
+        <div class="hidden md:block">
           <kinesis-element class="absolute" style="top: 10%; left: 10%;" :strength="10">
             <svg
               width="60"
@@ -263,16 +263,16 @@
       </kinesis-container>
       <!-- about section -->
       <div id="about" class="about-section pt-12 my-24 flex">
-        <div class="about-section__left text-left">
+        <div class="w-full lg:w-3/5 about-section__left text-left">
           <h2 class="section-heading uppercase font-semibold underline">
             <span class="text-4xl font-bold mr-1 rounded-sm relative">a</span>bout me
           </h2>
           <h3 class="mt-12">Hello 👋 Welcome to my portfolio!</h3>
-          <h4 class="text-5xl">
+          <h4 class="text-3xl mt-2 md:mt-0 md:text-5xl">
             I'm
-            <span class="capitalize text-6xl font-black">oussama djaidri</span>
+            <span class="capitalize text-5xl md:text-6xl font-black">oussama djaidri</span>
           </h4>
-          <p class="mt-4 text-1xl max-w-xl">
+          <p class="mt-4 text-md md:text-1xl max-w-sm md:max-w-xl">
             Fullstack developer from
             <span class="relative">Algeria</span>,
             passionate about
@@ -292,7 +292,7 @@
             data-cursor-hover
           >more about me</g-link>
         </div>
-        <div class="about-section__right self-center mt-12">
+        <div class="hidden lg:block about-section__right self-center mt-12">
           <g-image src="~/assets/images/about-me.svg"></g-image>
         </div>
       </div>
@@ -302,52 +302,52 @@
           <span class="text-4xl font-bold mr-1 rounded-sm relative">m</span>y works
         </h2>
         <!-- work-1 -->
-        <div class="mt-20 card w-4/5 rounded-md mx-auto overflow-hidden">
+        <div class="mt-20 card w-full md:w-4/5 rounded-md mx-auto overflow-hidden">
           <div class="card-header work-1 h-64 overflow-hidden">
             <g-link data-cursor-hover>
               <g-image src="~/assets/images/work1.png"></g-image>
             </g-link>
           </div>
-          <div class="card-content mx-12 my-6">
-            <div class="mb-10">
-              <h3 class="text-2xl font-bold inline-block">Marvel - Portfolio Theme</h3>
+          <div class="card-content mx-4 md:mx-12 my-6">
+            <div class="mb-4 md:mb-10">
+              <h3 class="text-1xl md:text-2xl font-bold inline-block">Marvel - Portfolio Theme</h3>
               <span class="underline font-bold uppercase text-smallest ml-3" data-cursor-hover>
                 see demo
                 <external-link-icon class="inline-block"></external-link-icon>
               </span>
             </div>
             <div class="tags uppercase text-xs font-semibold mb-6">
-              <span class="mr-2 p-2">#html5</span>
-              <span class="mx-2 p-2">#css3</span>
-              <span class="mx-2 p-2">#javascript</span>
-              <span class="mx-2 p-2">#tailwindcss</span>
+              <span class="mr-2 p-1 md:p-2">#html5</span>
+              <span class="mr-2 p-1 md:p-2">#css3</span>
+              <span class="mr-2 p-1 md:p-2">#javascript</span>
+              <span class="mr-2 p-1 md:p-2">#tailwindcss</span>
             </div>
-            <p>
+            <p class="text-sm md:text-md">
               It’s time to create and inspire with
               <span>Marvel</span>, a stunning modern portfolio theme I created so you can showcase your work the way it truly deserves.
             </p>
           </div>
         </div>
         <!-- work-2 -->
-        <div class="mt-12 card w-4/5 rounded-md mx-auto overflow-hidden">
+        <div class="mt-12 card w-full md:w-4/5 rounded-md mx-auto overflow-hidden">
           <div class="card-header work-2 h-64 overflow-hidden">
             <g-link data-cursor-hover>
               <g-image src="~/assets/images/work-2.png"></g-image>
             </g-link>
           </div>
-          <div class="card-content mx-12 my-6">
-            <div class="mb-10">
-              <h3 class="text-2xl font-bold inline-block">Magazee - Website Template</h3>
+          <div class="card-content mx-4 md:mx-12 my-6">
+            <div class="mb-4 md:mb-10">
+              <h3 class="text-1xl md:text-2xl font-bold inline-block">Magazee - Website Template</h3>
               <span class="underline font-bold uppercase text-smallest ml-3" data-cursor-hover>
                 see demo
                 <external-link-icon class="inline-block"></external-link-icon>
               </span>
             </div>
             <div class="tags uppercase text-xs font-semibold mb-6">
-              <span class="mr-2 p-2">#html5</span>
-              <span class="mx-2 p-2">#css3</span>
+              <span class="mr-2 p-1 md:p-2">#html5</span>
+              <span class="mr-2 p-1 md:p-2">#css3</span>
             </div>
-            <p>Responsive, progressive web app for magazine websites.</p>
+            <p class="text-sm md:text-md">Responsive, progressive web app for magazine websites.</p>
           </div>
         </div>
         <!-- more works -->
@@ -360,7 +360,7 @@
         </div>
         <!-- let's work together -->
         <div class="mt-16 text-center">
-          <h3 class="text-5xl font-bold">
+          <h3 class="text-2xlPlus md:text-5xl font-bold">
             Like my works? Let's work together,
             <br />You can contact me now!
           </h3>
@@ -377,16 +377,16 @@
           <span class="text-4xl font-bold mr-1 rounded-sm relative">s</span>ervices
         </h2>
         <div class="content-section flex mt-20 justify-around">
-          <div class="left-section w-1/2 text-left">
+          <div class="left-section w-full lg:w-3/5 text-left">
             <h3 class="text-2xl capitalize font-bold mb-8">what i can do.</h3>
             <div class="all-services">
-              <div class="ml-4">
+              <div class="ml-0 lg:ml-4">
                 <h4 class="underline font-bold">Web Development</h4>
                 <p
                   class="mt-3 text-sm"
                 >I know how to create your website to run across devices using the latest technologies available.</p>
               </div>
-              <div class="ml-8 mt-4">
+              <div class="ml-0 lg:ml-8 mt-4">
                 <h4 class="underline font-bold">Mobile Development</h4>
                 <p class="mt-3 text-sm">
                   I love to build mobile apps runs on both android & iOS using latest technologies such as
@@ -394,13 +394,13 @@
                   <span>react native</span>.
                 </p>
               </div>
-              <div class="ml-12 mt-4">
+              <div class="ml-0 lg:ml-12 mt-4">
                 <h4 class="underline font-bold">Other Services</h4>
                 <p class="mt-3 text-sm">Fix bugs - App improvements - Help/Consultation</p>
               </div>
             </div>
           </div>
-          <div class="right-section">
+          <div class="hidden lg:block right-section">
             <g-image src="~/assets/images/illustration-2.svg"></g-image>
           </div>
         </div>
@@ -412,11 +412,11 @@
           <g-link to="https://www.youtube.com/c/algorithmCoding" data-cursor-hover>YouTube</g-link>
         </h3>
         <p
-          class="max-w-xl mx-auto"
-        >Over the last year, I've created courses on VS Code, Web Development, Pytohn, Node.js, and more. I love being able to put the things I've learned into a package for others to learn from.</p>
+          class="max-w-xl mx-auto text-sm md:text-md"
+        >Over the last year, I've created courses on Web Development, Python, Golang, and more. I love being able to put the things I've learned into a package for others to learn from.</p>
         <div class="mt-6 max-w-xl mx-auto">
           <h3 class="text-2xl mb-6 font-bold">Looking for Custom Content?</h3>
-          <p>I often get requests to create custom content like individual courses, one-off videos, articles, etc. If you're interested in something,contact me and include all of the necessary details.</p>
+          <p class="text-sm md:text-md">I often get requests to create custom content like individual courses, one-off videos, articles, etc. If you're interested in something,contact me and include all of the necessary details.</p>
           <g-link
             class="btn mr-auto mt-8 font-bold py-3 px-8 rounded-sm text-sm inline-block uppercase"
             v-scroll-to="'#contact'"
@@ -431,32 +431,33 @@
           <h3 class="font-bold text-6xl uppercase">contact</h3>
         </div>
         <div class="contact-content flex flex-wrap">
-          <div class="contact-info w-full flex justify-around">
-            <span class="text-sm">
+          <div class="contact-info w-full flex flex-wrap md:flex-no-wrap justify-around">
+            <span class="text-sm w-1/2 mb-4">
               <mail-icon class="inline"></mail-icon>
               odjaidri@gmail.com
             </span>
-            <span class="text-sm">
+            <span class="text-sm w-1/2 mb-4">
               <phone-icon class="inline"></phone-icon>
               +213 666-35-83-89
             </span>
-            <span class="text-sm">
+            <span class="text-sm w-1/2">
               <map-pin-icon class="inline"></map-pin-icon>
               address: Sétif, Algeria
             </span>
-            <span class="text-sm">
+            <span class="text-sm w-1/2">
               <smile-icon class="inline"></smile-icon>
               freelancer : <span class="freelancer font-bold">available</span>
             </span>
           </div>
           <div class="contact-form mt-1 w-full flex p-4">
-            <form class="w-1/2 p-6">
+            <form class="w-full lg:w-1/2 p-2 lg:p-6">
               <input class="w-full border mb-4 p-4 rounded" type="text" name="name" placeholder="Your Name" autocomplete="off">
               <input class="w-full border mb-4 p-4 rounded" type="email" name="email" placeholder="Your Email" autocomplete="off">
               <input class="w-full border mb-4 p-4 rounded" type="text" name="subject" placeholder="Subject" autocomplete="off">
               <textarea class="w-full border rounded p-4" name="details" cols="24" rows="5" placeholder="Additional Details"></textarea>
+              <button data-cursor-hover class="mt-4 font-bold py-3 px-8 rounded text-sm inline-block uppercase">send</button>
             </form>
-            <div class="w-1/2 p-4">
+            <div class="hidden lg:block w-1/2 p-4">
               <g-image src="~/assets/images/contactme.svg"></g-image>
             </div>
           </div>
@@ -660,13 +661,29 @@ export default {
 
 @keyframes moveSlideshow1 {
   100% {
-    transform: translateY(-84.5%);
+    transform: translateY(-74.5%);
+  }
+}
+
+@screen lg {
+  @keyframes moveSlideshow1 {
+    100% {
+      transform: translateY(-84.5%);
+    }
   }
 }
 
 @keyframes moveSlideshow2 {
   100% {
-    transform: translateY(-87%);
+    transform: translateY(-76.2%);
+  }
+}
+
+@screen lg {
+  @keyframes moveSlideshow2 {
+    100% {
+      transform: translateY(-87%);
+    }
   }
 }
 
@@ -689,10 +706,17 @@ export default {
   background: var(--special-color);
   display: inline-block;
   border-radius: 50px;
-  left: 4%;
+  left: 0%;
   position: absolute;
   transition: all 0.5s ease-in-out;
-  top: -12%;
+  top: -30%;
+}
+
+@screen lg {
+  .works-section .circle {
+    left: 4%;
+    top: -12%;
+  }
 }
 
 .more-works:hover .circle {
@@ -751,6 +775,19 @@ export default {
   box-shadow: none;
   outline: none;
   border: 2px solid var(--special-color);
+}
+
+.contact-form form button {
+  background: var(--special-color);
+  color: #fff;
+  border: 2px solid var(--special-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: var(--bg-color);
+  color: var(--special-color);
 }
 
 

@@ -8,6 +8,7 @@ module.exports = {
       fontSize: {
         smallest: "11px",
         "1xl": "1.35rem",
+        "2xlPlus": "1.7rem",
       },
     },
   },
