@@ -99,7 +99,7 @@
               />
             </svg>
           </kinesis-element>
-          <kinesis-element class="absolute" style="top: 52%; left: 28%;" :strength="10">
+          <kinesis-element class="absolute hidden lg:block" style="top: 52%; left: 28%;" :strength="10">
             <svg
               width="70"
               height="70"
@@ -177,7 +177,7 @@
               />
             </svg>
           </kinesis-element>
-          <kinesis-element class="absolute" style="top: 40%; right: 25%;">
+          <kinesis-element class="absolute hidden lg:block" style="top: 40%; right: 25%;">
             <svg
               width="100"
               height="100"
@@ -302,13 +302,13 @@
           <span class="text-4xl font-bold mr-1 rounded-sm relative">m</span>y works
         </h2>
         <!-- work-1 -->
-        <div class="mt-20 card w-full md:w-4/5 rounded-md mx-auto overflow-hidden">
+        <div class="mt-20 card w-full lg:w-4/5 rounded-md mx-auto overflow-hidden">
           <div class="card-header work-1 h-64 overflow-hidden">
             <g-link data-cursor-hover>
               <g-image src="~/assets/images/work1.png"></g-image>
             </g-link>
           </div>
-          <div class="card-content mx-4 md:mx-12 my-6">
+          <div class="card-content mx-4 md:mx-8 lg:mx-12 my-6">
             <div class="mb-4 md:mb-10">
               <h3 class="text-1xl md:text-2xl font-bold inline-block">Marvel - Portfolio Theme</h3>
               <span class="underline font-bold uppercase text-smallest ml-3" data-cursor-hover>
@@ -329,13 +329,13 @@
           </div>
         </div>
         <!-- work-2 -->
-        <div class="mt-12 card w-full md:w-4/5 rounded-md mx-auto overflow-hidden">
+        <div class="mt-12 card w-full lg:w-4/5 rounded-md mx-auto overflow-hidden">
           <div class="card-header work-2 h-64 overflow-hidden">
             <g-link data-cursor-hover>
               <g-image src="~/assets/images/work-2.png"></g-image>
             </g-link>
           </div>
-          <div class="card-content mx-4 md:mx-12 my-6">
+          <div class="card-content mx-4 md:mx-8 lg:mx-12 my-6">
             <div class="mb-4 md:mb-10">
               <h3 class="text-1xl md:text-2xl font-bold inline-block">Magazee - Website Template</h3>
               <span class="underline font-bold uppercase text-smallest ml-3" data-cursor-hover>
@@ -360,7 +360,7 @@
         </div>
         <!-- let's work together -->
         <div class="mt-16 text-center">
-          <h3 class="text-2xlPlus md:text-5xl font-bold">
+          <h3 class="text-2xlPlus sm:text-3xl md:text-4xl lg:text-5xl font-bold">
             Like my works? Let's work together,
             <br />You can contact me now!
           </h3>
@@ -431,7 +431,7 @@
           <h3 class="font-bold text-6xl uppercase">contact</h3>
         </div>
         <div class="contact-content flex flex-wrap">
-          <div class="contact-info w-full flex flex-wrap md:flex-no-wrap justify-around">
+          <div class="contact-info w-full flex flex-wrap lg:flex-no-wrap justify-around">
             <span class="text-sm w-1/2 mb-4">
               <mail-icon class="inline"></mail-icon>
               odjaidri@gmail.com
@@ -710,6 +710,13 @@ export default {
   position: absolute;
   transition: all 0.5s ease-in-out;
   top: -30%;
+}
+
+@screen md {
+  .works-section .circle {
+    left: 4%;
+    top: -15%;
+  }
 }
 
 @screen lg {

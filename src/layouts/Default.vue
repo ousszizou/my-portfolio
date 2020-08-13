@@ -75,7 +75,7 @@
             </template>
           </ToggleDarkMode>
         </div>
-        <nav class="nav hidden lg:block">
+        <nav class="nav hidden md:block">
           <g-link
             data-cursor-hover
             class="nav__link menu-span uppercase text-smallest tracking-widerPlus font-bold"
