@@ -287,7 +287,7 @@
             data-cursor-hover
           >See My Works</g-link>
           <g-link
-            class="btn-secondary ml-4 mr-auto mt-8 font-bold py-3 px-8 rounded-full capitalize text-sm inline-block"
+            class="btn-secondary ml-0 sm:ml-4 mr-auto mt-8 font-bold py-3 px-8 rounded-full capitalize text-sm inline-block"
             to="/about"
             data-cursor-hover
           >more about me</g-link>
