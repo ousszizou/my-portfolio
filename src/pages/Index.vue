@@ -299,7 +299,7 @@
       <!-- works section -->
       <div id="works" class="works-section my-24 text-left">
         <h2 class="section-heading uppercase font-semibold underline">
-          <span class="text-4xl font-bold mr-1 rounded-sm relative">m</span>y works
+          <span class="text-4xl font-bold mr-1 rounded-sm relative">m</span>y work
         </h2>
         <!-- work-1 -->
         <div class="mt-20 card w-full xl:w-4/5 rounded-md mx-auto overflow-hidden">
