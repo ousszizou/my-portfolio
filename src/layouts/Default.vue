@@ -175,7 +175,7 @@ export default {
 
 #HamMenu {
   width: 100%;
-  top: 12%;
+  top: 15%;
   position: absolute;
   left: 0px;
   background: var(--bg-color);
