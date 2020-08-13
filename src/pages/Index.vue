@@ -433,19 +433,19 @@
         <div class="contact-content flex flex-wrap">
           <div class="contact-info w-full flex flex-wrap lg:flex-no-wrap justify-around">
             <span class="text-sm w-1/2 mb-4">
-              <mail-icon class="inline"></mail-icon>
+              <mail-icon class="inline align-text-bottom"></mail-icon>
               odjaidri@gmail.com
             </span>
             <span class="text-sm w-1/2 mb-4">
-              <phone-icon class="inline"></phone-icon>
+              <phone-icon class="inline align-text-bottom"></phone-icon>
               +213 666-35-83-89
             </span>
             <span class="text-sm w-1/2">
-              <map-pin-icon class="inline"></map-pin-icon>
+              <map-pin-icon class="inline align-text-bottom"></map-pin-icon>
               address: Sétif, Algeria
             </span>
             <span class="text-sm w-1/2">
-              <smile-icon class="inline"></smile-icon>
+              <smile-icon class="inline align-text-bottom"></smile-icon>
               freelancer : <span class="freelancer font-bold">available</span>
             </span>
           </div>
