@@ -270,7 +270,7 @@
           <h3 class="mt-12">Hello 👋 Welcome to my portfolio!</h3>
           <h4 class="text-3xl mt-2 md:mt-0 md:text-5xl">
             I'm
-            <span class="capitalize text-5xl md:text-6xl font-black">oussama djaidri</span>
+            <span class="capitalize text-5xl xl:text-6xl font-black">oussama djaidri</span>
           </h4>
           <p class="mt-4 text-md md:text-1xl max-w-sm md:max-w-xl">
             Fullstack developer from
@@ -302,7 +302,7 @@
           <span class="text-4xl font-bold mr-1 rounded-sm relative">m</span>y works
         </h2>
         <!-- work-1 -->
-        <div class="mt-20 card w-full lg:w-4/5 rounded-md mx-auto overflow-hidden">
+        <div class="mt-20 card w-full xl:w-4/5 rounded-md mx-auto overflow-hidden">
           <div class="card-header work-1 h-64 overflow-hidden">
             <g-link data-cursor-hover>
               <g-image src="~/assets/images/work1.png"></g-image>
@@ -329,7 +329,7 @@
           </div>
         </div>
         <!-- work-2 -->
-        <div class="mt-12 card w-full lg:w-4/5 rounded-md mx-auto overflow-hidden">
+        <div class="mt-12 card w-full xl:w-4/5 rounded-md mx-auto overflow-hidden">
           <div class="card-header work-2 h-64 overflow-hidden">
             <g-link data-cursor-hover>
               <g-image src="~/assets/images/work-2.png"></g-image>
@@ -449,7 +449,7 @@
               freelancer : <span class="freelancer font-bold">available</span>
             </span>
           </div>
-          <div class="contact-form mt-1 w-full flex p-4">
+          <div class="contact-form mt-1 w-full sm:w-11/12 md:w-5/6 lg:w-full sm:mx-auto flex p-4">
             <form class="w-full lg:w-1/2 p-2 lg:p-6">
               <input class="w-full border mb-4 p-4 rounded" type="text" name="name" placeholder="Your Name" autocomplete="off">
               <input class="w-full border mb-4 p-4 rounded" type="email" name="email" placeholder="Your Email" autocomplete="off">
@@ -501,6 +501,7 @@ export default {
 </script>
 
 <style>
+
 .home-links a {
   margin-right: 1rem;
 }
@@ -661,11 +662,19 @@ export default {
 
 @keyframes moveSlideshow1 {
   100% {
-    transform: translateY(-74.5%);
+    transform: translateY(-74%);
   }
 }
 
 @screen lg {
+  @keyframes moveSlideshow1 {
+    100% {
+      transform: translateY(-87%);
+    }
+  }
+}
+
+@screen xl {
   @keyframes moveSlideshow1 {
     100% {
       transform: translateY(-84.5%);
@@ -680,6 +689,14 @@ export default {
 }
 
 @screen lg {
+  @keyframes moveSlideshow2 {
+    100% {
+      transform: translateY(-88.5%);
+    }
+  }
+}
+
+@screen xl {
   @keyframes moveSlideshow2 {
     100% {
       transform: translateY(-87%);
@@ -710,6 +727,13 @@ export default {
   position: absolute;
   transition: all 0.5s ease-in-out;
   top: -30%;
+}
+
+@screen sm {
+  .works-section .circle {
+    left: 4%;
+    top: -16%;
+  }
 }
 
 @screen md {
