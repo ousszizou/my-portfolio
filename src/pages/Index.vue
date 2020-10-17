@@ -9,7 +9,6 @@
           <vue-typed-js
             :strings="[
               'FullStack Developer',
-              'Mobile Developer',
               'Youtube Creator',
             ]"
             :typeSpeed="80"
@@ -380,21 +379,20 @@
           <div class="left-section w-full lg:w-3/5 text-left">
             <h3 class="text-2xl capitalize font-bold mb-8">what i can do.</h3>
             <div class="all-services">
-              <div class="ml-0 lg:ml-4">
+              <div class="ml-0 lg:ml-1">
                 <h4 class="underline font-bold">Web Development</h4>
                 <p
                   class="mt-3 text-sm"
                 >I know how to create your website to run across devices using the latest technologies available.</p>
               </div>
-              <div class="ml-0 lg:ml-8 mt-4">
+              <div class="ml-0 lg:ml-1 mt-4">
                 <h4 class="underline font-bold">Mobile Development</h4>
                 <p class="mt-3 text-sm">
                   I love to build mobile apps runs on both android & iOS using latest technologies such as
-                  <span>flutter</span> &
-                  <span>react native</span>.
+                  <span>flutter</span>.
                 </p>
               </div>
-              <div class="ml-0 lg:ml-12 mt-4">
+              <div class="ml-0 lg:ml-1 mt-4">
                 <h4 class="underline font-bold">Other Services</h4>
                 <p class="mt-3 text-sm">Fix bugs - App improvements - Help/Consultation</p>
               </div>
