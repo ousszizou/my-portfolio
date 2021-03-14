@@ -16,8 +16,11 @@
     "vue-typed-js": "^0.1.2"
   },
   "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.3",
+    "autoprefixer": "^9",
     "node-sass": "^4.14.1",
+    "postcss": "^7",
     "sass-loader": "^9.0.3",
-    "tailwindcss": "^1.6.2"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   }
 }
