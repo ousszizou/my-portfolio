@@ -10,6 +10,10 @@ module.exports = {
         "1xl": "1.35rem",
         "2xlPlus": "1.7rem",
       },
+      height: {
+        104: "26rem",
+        112: "28rem"
+      }
     },
   },
   variants: {},

@@ -34,8 +34,8 @@
     <div class="my-12">
       <h2 class="font-semibold text-2xl">Technologies I use</h2>
       <div class="flex content-center flex-wrap text-center w-full mt-6">
-        <div class="w-3/12">
-          <div class="tech-card rounded-md py-4 m-2">
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
             <g-image
               class="mb-2 w-20 h-20 mx-auto"
               src="~/assets/images/logos/js.svg"
@@ -45,8 +45,8 @@
             <span class="text-xs font-medium block">(programing language)</span>
           </div>
         </div>
-        <div class="w-3/12">
-          <div class="tech-card rounded-md py-4 m-2">
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
             <g-image
               class="mb-2 w-20 h-20 mx-auto"
               src="~/assets/images/logos/ts.svg"
@@ -56,8 +56,8 @@
             <span class="text-xs font-medium block">(programing language)</span>
           </div>
         </div>
-        <div class="w-3/12">
-          <div class="tech-card rounded-md py-4 m-2">
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
             <g-image
               class="mb-2 w-20 h-20 mx-auto"
               src="~/assets/images/logos/go.svg"
@@ -67,19 +67,19 @@
             <span class="text-xs font-medium block">(programing language)</span>
           </div>
         </div>
-        <div class="w-3/12">
-          <div class="tech-card rounded-md py-4 m-2">
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
             <g-image
               class="mb-2 w-20 h-20 mx-auto"
-              src="~/assets/images/logos/python.svg"
-              alt="python logo"
+              src="~/assets/images/logos/nodejs.svg"
+              alt="nodejs logo"
             />
-            <span class="text-xs font-medium block">Python</span>
-            <span class="text-xs font-medium block">(programing language)</span>
+            <span class="text-xs font-medium block">Node.js</span>
+            <span class="text-xs font-medium block">(JavaScript runtime)</span>
           </div>
         </div>
-        <div class="w-3/12">
-          <div class="tech-card rounded-md py-4 m-2">
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
             <g-image
               class="mb-2 w-20 h-20 mx-auto"
               src="~/assets/images/logos/vue.svg"
@@ -89,41 +89,8 @@
             <span class="text-xs font-medium block">(js framework)</span>
           </div>
         </div>
-        <div class="w-3/12">
-          <div class="tech-card rounded-md py-4 m-2">
-            <g-image
-              class="mb-2 w-20 h-20 mx-auto"
-              src="~/assets/images/logos/react.svg"
-              alt="react.js logo"
-            />
-            <span class="text-xs font-medium block">React</span>
-            <span class="text-xs font-medium block">(js framework)</span>
-          </div>
-        </div>
-        <div class="w-3/12">
-          <div class="tech-card rounded-md py-4 m-2">
-            <g-image
-              class="mb-2 w-20 h-20 mx-auto"
-              src="~/assets/images/logos/tailwindcss.svg"
-              alt="tailwindcss logo"
-            />
-            <span class="text-xs font-medium block">Tailwindcss</span>
-            <span class="text-xs font-medium block">(css framework)</span>
-          </div>
-        </div>
-        <div class="w-3/12">
-          <div class="tech-card rounded-md py-4 m-2">
-            <g-image
-              class="mb-2 w-20 h-20 mx-auto"
-              src="~/assets/images/logos/bootstrap.svg"
-              alt="bootstrap logo"
-            />
-            <span class="text-xs font-medium block">Bootstrap</span>
-            <span class="text-xs font-medium block">(css framework)</span>
-          </div>
-        </div>
-        <div class="w-3/12">
-          <div class="tech-card rounded-md py-4 m-2">
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
             <g-image
               class="mb-2 w-20 h-20 mx-auto"
               src="~/assets/images/logos/nuxt.svg"
@@ -133,8 +100,19 @@
             <span class="text-xs font-medium block">(vue.js framework)</span>
           </div>
         </div>
-        <div class="w-3/12">
-          <div class="tech-card rounded-md py-4 m-2">
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
+            <g-image
+              class="mb-2 w-20 h-20 mx-auto"
+              src="~/assets/images/logos/react.svg"
+              alt="react.js logo"
+            />
+            <span class="text-xs font-medium block">React</span>
+            <span class="text-xs font-medium block">(js framework)</span>
+          </div>
+        </div>
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
             <g-image
               class="mb-2 w-20 h-20 mx-auto"
               src="~/assets/images/logos/nextjs.svg"
@@ -144,30 +122,52 @@
             <span class="text-xs font-medium block">(react.js framework)</span>
           </div>
         </div>
-        <div class="w-3/12">
-          <div class="tech-card rounded-md py-4 m-2">
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
             <g-image
               class="mb-2 w-20 h-20 mx-auto"
-              src="~/assets/images/logos/gridsome.svg"
-              alt="gridsome logo"
+              src="~/assets/images/logos/html-5.svg"
+              alt="html logo"
             />
-            <span class="text-xs font-medium block">Gridsome</span>
-            <span class="text-xs font-medium block">(vue.js framework)</span>
+            <span class="text-xs font-medium block">HTML</span>
+            <span class="text-xs font-medium block">(web fundamentals)</span>
           </div>
         </div>
-        <div class="w-3/12">
-          <div class="tech-card rounded-md py-4 m-2">
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
             <g-image
               class="mb-2 w-20 h-20 mx-auto"
-              src="~/assets/images/logos/gatsby.svg"
-              alt="gatsby logo"
+              src="~/assets/images/logos/css-3.svg"
+              alt="css logo"
             />
-            <span class="text-xs font-medium block">Gatsby</span>
-            <span class="text-xs font-medium block">(react.js framework)</span>
+            <span class="text-xs font-medium block">CSS</span>
+            <span class="text-xs font-medium block">(web fundamentals)</span>
           </div>
         </div>
-        <div class="w-3/12">
-          <div class="tech-card rounded-md py-4 m-2">
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
+            <g-image
+              class="mb-2 w-20 h-20 mx-auto"
+              src="~/assets/images/logos/tailwindcss.svg"
+              alt="tailwindcss logo"
+            />
+            <span class="text-xs font-medium block">Tailwindcss</span>
+            <span class="text-xs font-medium block">(css framework)</span>
+          </div>
+        </div>
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
+            <g-image
+              class="mb-2 w-20 h-20 mx-auto"
+              src="~/assets/images/logos/git-icon.svg"
+              alt="git logo"
+            />
+            <span class="text-xs font-medium block">git</span>
+            <span class="text-xs font-medium block">(version control)</span>
+          </div>
+        </div>
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
             <g-image
               class="mb-2 w-20 h-20 mx-auto"
               src="~/assets/images/logos/mongodb.svg"
@@ -177,8 +177,8 @@
             <span class="text-xs font-medium block">(database)</span>
           </div>
         </div>
-        <div class="w-3/12">
-          <div class="tech-card rounded-md py-4 m-2">
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
             <g-image
               class="mb-2 w-20 h-20 mx-auto"
               src="~/assets/images/logos/mysql.svg"
@@ -188,21 +188,30 @@
             <span class="text-xs font-medium block">(database)</span>
           </div>
         </div>
-        <div class="w-3/12">
-          <div class="tech-card rounded-md py-4 m-2">
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
             <g-image
               class="mb-2 w-20 h-20 mx-auto"
-              src="~/assets/images/logos/nodejs.svg"
-              alt="nodejs logo"
+              src="~/assets/images/logos/postgresql.svg"
+              alt="postgresql logo"
             />
-            <span class="text-xs font-medium block">Node.js</span>
-            <span class="text-xs font-medium block"
-              >(backend js framework)</span
-            >
+            <span class="text-xs font-medium block">PostgreSQL</span>
+            <span class="text-xs font-medium block">(database)</span>
           </div>
         </div>
-        <div class="w-3/12">
-          <div class="tech-card rounded-md py-4 m-2">
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
+            <g-image
+              class="mb-2 w-20 h-20 mx-auto"
+              src="~/assets/images/logos/graphql.svg"
+              alt="graphql logo"
+            />
+            <span class="text-xs font-medium block">GraphQl</span>
+            <span class="text-xs font-medium block">(query language)</span>
+          </div>
+        </div>
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
             <g-image
               class="mb-2 w-20 h-20 mx-auto"
               src="~/assets/images/logos/docker.svg"
@@ -210,6 +219,39 @@
             />
             <span class="text-xs font-medium block">Docker</span>
             <span class="text-xs font-medium block">(DevOps)</span>
+          </div>
+        </div>
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
+            <g-image
+              class="mb-2 w-20 h-20 mx-auto"
+              src="~/assets/images/logos/postman.svg"
+              alt="postman logo"
+            />
+            <span class="text-xs font-medium block">Postman</span>
+            <span class="text-xs font-medium block">(api tool)</span>
+          </div>
+        </div>
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
+            <g-image
+              class="mb-2 w-20 h-20 mx-auto"
+              src="~/assets/images/logos/insomnia.svg"
+              alt="insomnia logo"
+            />
+            <span class="text-xs font-medium block">Insomnia</span>
+            <span class="text-xs font-medium block">(api tool)</span>
+          </div>
+        </div>
+        <div class="w-full lg:w-3/12 sm:w-2/4">
+          <div class="tech-card rounded-md py-4 mx-0 sm:mx-2 my-2">
+            <g-image
+              class="mb-2 w-20 h-20 mx-auto"
+              src="~/assets/images/logos/figma.svg"
+              alt="figma logo"
+            />
+            <span class="text-xs font-medium block">Figma</span>
+            <span class="text-xs font-medium block">(design tool)</span>
           </div>
         </div>
       </div>
